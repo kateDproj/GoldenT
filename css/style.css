@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 100px 0 15px 0;
+    font-style: normal;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    color: #777777;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    /* border: 1px solid blanchedalmond; */
+    overflow: hidden;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-whight {
+    background: #ffffff;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+.fl-left {
+    float: left;
+}
+
+.fl-right {
+    float: right;
+}
+
+.row {
+    margin: 0;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* SETKA */
+
+.block-639 {
+    /* 68% */
+    width: 65.5%;
+    margin: 0 1.25%;
+    float: left;
+}
+
+.block-600 {
+    width: 60%;
+    /* margin: 0 1.25%; */
+}
+
+.block-300 {
+    /* 32% */
+    width: 29.5%;
+    margin: 0 1.25%;
+    float: left;
+}
+
+.block-296 {
+    width: 30.83333333%;
+    margin: 0 1.25%;
+    float: left;
+}
+
+.block-900 {
+    width: 97%;
+    margin: 0 1.25%;
+}
+
+
+/*------------- SETKA----------- */
+
+
+/*-------------- HEADER------------------- */
+
+.site-header {
+    width: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* height: auto; */
+    background-image: linear-gradient( rgba(44, 40, 40, 0.8), rgba(0, 0, 0, 0.5)), url('../images/header_bg.png');
+    background-size: 100% 100%;
+    color: #ffffff;
+}
+
+.header-logo {
+    margin: 40px 0 0 0;
+}
+
+.header-nav {
+    margin-bottom: 180px;
+}
+
+.header-nav ul {
+    margin: 40px 0;
+    float: right;
+}
+
+.header-nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header-nav ul li {
+    float: left;
+    list-style-type: none;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 20px;
+}
+
+.header-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    /* display: block; */
+}
+
+.site-header h1 {
+    font-size: 75px;
+    font-style: normal;
+}
+
+
+/* .site-header h2 {
+    font-size: 40px;
+    font-style: normal;
+} */
+
+
+/* BUTTON */
+
+.btn-tell-more {
+    color: #ffffff;
+    background: #fed136;
+    border: none;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-tell-more:hover {
+    cursor: pointer;
+}
+
+
+/* BUTTON */
+
+
+/* -------------    HEADER--END---------- */
+
+
+/* -----------SERVICES--BEGIN----- */
+
+.services {
+    padding-bottom: 100px;
+}
+
+.cart {
+    margin: 30px 0 20px 0;
+}
+
+.cart img {
+    display: block;
+    margin: 0 auto;
+}
+
+.services h2 {
+    margin: 100px 0 15px 0;
+}
+
+
+/* -----------SERVICES-END---- */
+
+
+/* ----------PORTFOLIO----BEGIN */
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio p {
+    margin-top: -10px;
+}
+
+.portfolio .cart {
+    padding-bottom: 20px;
+}
+
+
+/* ----------PORTFOLIO----END */
+
+
+/* ----------ABOUT-US BEGIN--- */
+
+.about-us {
+    float: left;
+    margin: 30px 0;
+}
+
+.block-60 {
+    width: 57.5%;
+    margin: 0 1.25%;
+    float: left;
+}
+
+.block-40 {
+    width: 37.5%;
+    margin: 0 1.25%;
+    float: left;
+}
+
+.img-left {
+    margin-left: -3%;
+}
+
+
+/* ----------ABOUT-US END--- */
