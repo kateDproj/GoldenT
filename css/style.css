@@ -15,10 +15,12 @@ h2 {
     font-size: 40px;
     margin: 100px 0 15px 0;
     font-style: normal;
+    text-transform: uppercase;
 }
 
 h4 {
     font-size: 18px;
+    margin: 20px 0 10px 0;
 }
 
 p {
@@ -101,6 +103,7 @@ p {
 .block-900 {
     width: 97%;
     margin: 0 1.25%;
+    float: left;
 }
 
 
@@ -170,12 +173,17 @@ p {
     color: #ffffff;
     background: #fed136;
     border: none;
+    border-radius: 4px;
     padding: 20px 60px;
     text-transform: uppercase;
     font-weight: bold;
     border: none;
 }
-
+div.btn-tell-more{
+   margin: 0 auto;
+    width: 200px;
+    padding: 20px 0;
+}
 .btn-tell-more:hover {
     cursor: pointer;
 }
@@ -216,7 +224,7 @@ p {
     width: 100%;
 }
 
-.portfolio p {
+.portfolio p, .team p {
     margin-top: -10px;
 }
 
@@ -229,27 +237,162 @@ p {
 
 
 /* ----------ABOUT-US BEGIN--- */
-
-.about-us {
-    float: left;
-    margin: 30px 0;
-}
-
-.block-60 {
-    width: 57.5%;
+.about-us{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 0 1.25%;
-    float: left;
+}
+.about-us h4{
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+}
+.about-us-left{
+    max-width: 600px;
+    display: flex;
+   flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+   align-content: flex-start;
+   align-items: flex-start;
+    margin: 70px 0;
+}
+.about-us-right{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: flex-end;
+    margin: 10px 0;
+}
+.first-flex {
+   order: 0;
+   flex: 2 0 320px;
+   align-self: auto;
+    max-width: 320px;
+     }
+    .second-flex {
+        order: 0;
+       flex: 1 0 250px;
+       align-self: auto;
+         }
+.about-us-image{
+    padding-right: 66px;
+}
+.our-story{
+    margin:70px auto;
+    position: relative;
+    right: 10px ;
+    background: #fed136;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border:  8px solid #f1f1f1;
+    padding-top: 34px;
+    
+
+   
+}
+.our-story p{
+    color: white;
+    font-size: 18px;
 }
 
-.block-40 {
-    width: 37.5%;
-    margin: 0 1.25%;
-    float: left;
-}
-
-.img-left {
-    margin-left: -3%;
-}
 
 
 /* ----------ABOUT-US END--- */
+
+/*------------TEAM BEGIN---------  */
+.team .cart {
+    margin: 30px 0 20px 0;
+}
+.team-img{
+    width: 83%;
+}
+.team-description {
+width: 55%;
+margin: 50px auto 50px auto;
+}
+
+.ico-row img{
+    display: inline-block;
+    margin: 0 5px;
+    width: 15%;
+}
+
+/*------------TEAM END---------  */
+
+/* -----------PARTNERS BEGIN----- */
+.partners .envato-img,.partners .wordpress-img,.partners .microlancer-img{
+   width: 20%;
+  margin: 50px 1.09375%;
+}
+.tuts-img{
+    width: 15%;
+    margin: 50px 1.09375%;
+}
+/* -----------PARTNERS END----- */
+
+/* -----------CONTACT-US-BEGIN----*/
+.contact-us{
+    background-image:url('../images/form-background.png') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact-us h2{
+    color: #ffffff;
+}
+.contact-us form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    margin: 70px 3% 10px 3%;
+    min-height: 205px;
+    
+}
+.contact-us form input{
+    border-radius: 3px;
+    border:  none;
+}
+input::placeholder, textarea::placeholder
+ { 
+     color: #bbbbbb;
+    font-weight: bold;
+
+} 
+.contact-us .person-info{
+     order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+  }
+  .contact-us .person-info input{
+      max-width: 100%;
+      margin-bottom: 20px;
+      padding: 20px 15px;
+     
+  }
+.contact-us .message{
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+
+}
+.contact-us .message textarea{
+    width: 100%;
+    height: 205px;
+    padding: 20px 15px;
+}
+.contact-us form .submit{
+   width: 100%;
+   text-align: center;
+    
+}   
+
+
