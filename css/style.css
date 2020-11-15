@@ -20,7 +20,7 @@ h2 {
 
 h4 {
     font-size: 18px;
-    margin: 20px 0 10px 0;
+   padding: 20px 0 10px 0;
 }
 
 p {
@@ -84,7 +84,7 @@ p {
 
 .block-600 {
     width: 60%;
-    /* margin: 0 1.25%; */
+    margin: 0 1.25%;
 }
 
 .block-300 {
@@ -115,7 +115,7 @@ p {
 .site-header {
     width: 100%;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* height: auto; */
     background-image: linear-gradient( rgba(44, 40, 40, 0.8), rgba(0, 0, 0, 0.5)), url('../images/header_bg.png');
     background-size: 100% 100%;
@@ -159,7 +159,12 @@ p {
     font-size: 75px;
     font-style: normal;
 }
-
+.site-headings{
+    padding-bottom: 160px;
+}
+.response-menu{
+    display: none;
+}
 
 /* .site-header h2 {
     font-size: 40px;
@@ -208,6 +213,7 @@ div.btn-tell-more{
 .cart img {
     display: block;
     margin: 0 auto;
+   
 }
 
 .services h2 {
@@ -224,8 +230,8 @@ div.btn-tell-more{
     width: 100%;
 }
 
-.portfolio p, .team p {
-    margin-top: -10px;
+.portfolio h4, .portfolio p{
+    margin: 0;
 }
 
 .portfolio .cart {
@@ -352,7 +358,7 @@ margin: 50px auto 50px auto;
     align-items: flex-start;
     margin: 70px 3% 10px 3%;
     min-height: 205px;
-    
+  
 }
 .contact-us form input{
     border-radius: 3px;
@@ -392,7 +398,169 @@ input::placeholder, textarea::placeholder
 .contact-us form .submit{
    width: 100%;
    text-align: center;
-    
+  
 }   
+/* --------footer----begin */
+.site-footer .icons-row{
+padding-top: 70px;
+padding-bottom: 30px;
+}
+.site-footer p{
+    padding-top: 77px;
+}
+/* -------------Responsive Styles---------- */
+.response-menu{
+    width: 250px;
+    height: 35px;
+    position: fixed;
+    right: -216px;
+    top: 0;
+    z-index: 2;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.response-menu ul{
+    padding-left: 50px ;
+    padding-top: 45px;
+}
+.response-menu ul  *{
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.response-menu:hover{
+    right: 0;
+    bottom: 0;
+    background-color: #272727 ; 
+    height: auto;
+      
+}
+.response-menu::after{
+    content: "";
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: url('../images/menu.png');
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
+@media screen and (max-width: 800px)
+{
+    .header-nav{
+        display: none;
+    }
+    .response-menu{
+        display: block;
+    }
+    .header-logo{
+        margin-top: 5px;
+    }
+    .services h2 {
+        margin: 70px 0 15px 0;
+    }
+}
+@media screen and (max-width: 570px)
+{
+    .md-headings{
+        margin: 0 1.25%;
+    }
+    .site-header h1 {
+        font-size: 65px;
+        font-style: normal;
+        margin: 30px 0 25px 0;
+    }
+    .site-header h2 {
+        font-size: 32px;
+        margin-top: 50px;
+    }
+    .site-headings{
+        padding-bottom: 95px;
+    }
+    .about-us{
+        margin: 0 1.25%;
+    }
+    .about-us-left{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .about-us-right{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-us-img{
+        text-align: center;
+     
+    }
+    .about-us-image{
+        padding-right: 0;
+    }
+    .about-us-description {
+        
+         margin: 20px 1.25% 0 1.25%;
+         text-align: center;
+    }
+    .about-us-description h4{
+        text-align: center;
+    }
+    .first-flex{
+        max-width: 100%;
+    }
+    .md-50p{
+        margin: 0 1.25%;
+        width: 47.5%;
+    
+    }
+    .contact-us form{
+       margin-top: 40px;
+    }
+    
+    h2{
+        margin: 60px 0 15px 0;
+        
+    }
+     .services {
+        padding-bottom: 10px;
+    }
+    .contact-us .submit{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+  
+}
+@media screen and (max-width: 460px){
+    .site-header h1 {
+        font-size: 44px;
+        font-style: normal;
+        margin: 30px 0 25px 0;
+    }
+    .site-header h2 {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+    .site-headings{
+        padding-bottom: 50px;
+    }
+   
+    h2, .services h2{
+        margin: 40px 0 15px 0;
+        font-size: 28px;
+    }
+    .contact-us .person-info{
+          flex: 1 1 100%;
+          margin-right: 0;
+    
+     }
+    
+   
+   
+}
+
 
 
