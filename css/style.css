@@ -544,6 +544,20 @@ padding-bottom: 30px;
         margin-bottom: 20px;
         margin-top: 20px;
     }
+    .img-175{
+        width: 200px;
+        height: 200px;
+    }
+    .ico-row img{
+        width: 41px;
+    }
+    .team .cart h4{
+       margin: 0;
+    }
+    .team-description{
+        width:90%;
+        margin-top: 0;
+    }
   
 }
 @media screen and (max-width: 460px){
