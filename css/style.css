@@ -449,6 +449,15 @@ padding-bottom: 30px;
     left: 1px;
     top: 1px;
 }
+.response-menu ul li{
+    padding: 8px 0 8px 10px;
+    margin-bottom: 5px;
+   
+}
+.response-menu ul li:hover{
+    background: #606e79;
+    border: 1px solid #e2e0e0;
+}
 @media screen and (max-width: 800px)
 {
     .header-nav{
