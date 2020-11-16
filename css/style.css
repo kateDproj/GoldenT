@@ -314,6 +314,9 @@ div.btn-tell-more{
 }
 .team-img{
     width: 83%;
+    border-radius: 100%;
+    border:  8px solid #f1f1f1;
+    
 }
 .team-description {
 width: 55%;
@@ -322,8 +325,31 @@ margin: 50px auto 50px auto;
 
 .ico-row img{
     display: inline-block;
-    margin: 0 5px;
     width: 15%;
+}
+.social{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 5px;
+}
+.social img{
+width: 100%;
+}
+ .twitter a img.last-tw, .facebook a img.last-fb, .pinterest img.last-pin, .google img.last-goo{
+    display: none;  
+  }
+  .twitter:hover img.last-tw,  .facebook:hover  img.last-fb, .pinterest:hover  img.last-pin, .google:hover img.last-goo{
+     display: inline-block;   
+  }
+  .twitter:hover img.first-tw, .facebook:hover img.first-fb, .pinterest:hover img.first-pin, .google:hover img.first-goo{
+    display: none;  
+  } 
+.team h4{
+    margin: 0;
+}
+.team .cart p{
+margin-top: 0;
 }
 
 /*------------TEAM END---------  */
@@ -336,6 +362,7 @@ margin: 50px auto 50px auto;
 .tuts-img{
     width: 15%;
     margin: 50px 1.09375%;
+   
 }
 /* -----------PARTNERS END----- */
 
@@ -402,8 +429,7 @@ input::placeholder, textarea::placeholder
 }   
 /* --------footer----begin */
 .site-footer .icons-row{
-padding-top: 70px;
-padding-bottom: 30px;
+padding: 70px 0 30px 50px;
 }
 .site-footer p{
     padding-top: 77px;
