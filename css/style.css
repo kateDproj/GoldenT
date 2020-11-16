@@ -517,6 +517,7 @@ padding-bottom: 30px;
         width: 47.5%;
     
     }
+    
     .contact-us form{
        margin-top: 40px;
     }
@@ -535,6 +536,14 @@ padding-bottom: 30px;
   
 }
 @media screen and (max-width: 460px){
+    .sm-100p{
+        max-width: 0 1.25%;
+        width: 97.5%;
+    }
+    .sm-50{
+        margin: 0 1.25%;
+        width: 47.5%;
+    }
     .site-header h1 {
         font-size: 44px;
         font-style: normal;
