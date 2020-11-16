@@ -540,6 +540,9 @@ padding-bottom: 30px;
         max-width: 0 1.25%;
         width: 97.5%;
     }
+    .sm-text-center{
+        text-align: center;
+    }
     .sm-50p{
         margin: 0 1.25%;
         width: 47.5%;
