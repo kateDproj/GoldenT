@@ -524,9 +524,11 @@ padding-bottom: 30px;
     .md-50p{
         margin: 0 1.25%;
         width: 47.5%;
-    
     }
-    
+    .md-100p{
+        margin: 0 1.25%;
+        width: 97.5%;
+    }
     .contact-us form{
        margin-top: 40px;
     }
